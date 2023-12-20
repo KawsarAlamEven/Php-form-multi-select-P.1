@@ -16,6 +16,14 @@
     <h2 class="text-2xl font-semibold md-4">Example From</h2>
     
     <?php
+      $name = '';
+      $gender = '';
+      $subscribe = [];
+      $datepicker  = '';
+      $timepicker = '';
+      $options = [];
+      $country = '';
+
     //  Check if the form is submited
      if($_SERVER['REQUEST_METHOD'] == 'POST'){
        $name = isset($_POST['name']) ? htmlspecialchars($_POST['name']) : '';
